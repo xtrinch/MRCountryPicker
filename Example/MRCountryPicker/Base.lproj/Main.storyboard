@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MRCountryPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,68 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J92-2H-s9C" customClass="MRCountryPicker" customModule="MRCountryPicker">
+                                <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mif-JG-hFa">
+                                <rect key="frame" x="279" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ke-yx-SRd">
+                                <rect key="frame" x="279" y="74" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRf-fI-YO4">
+                                <rect key="frame" x="279" y="110" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-Z7-enp">
+                                <rect key="frame" x="280" y="147" width="40" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="w1S-lL-R9A"/>
+                                    <constraint firstAttribute="height" constant="25" id="yfI-d4-3om"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mif-JG-hFa" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="5dd-dD-9eH"/>
+                            <constraint firstItem="bn8-Z7-enp" firstAttribute="top" secondItem="VRf-fI-YO4" secondAttribute="bottom" constant="16" id="AtV-lx-eOV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J92-2H-s9C" secondAttribute="bottom" id="Dva-1q-5tt"/>
+                            <constraint firstItem="bn8-Z7-enp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Oth-I6-wdf"/>
+                            <constraint firstItem="1Ke-yx-SRd" firstAttribute="top" secondItem="Mif-JG-hFa" secondAttribute="bottom" constant="25" id="QwX-p0-Tn5"/>
+                            <constraint firstItem="VRf-fI-YO4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="RWB-kT-P8M"/>
+                            <constraint firstAttribute="trailing" secondItem="J92-2H-s9C" secondAttribute="trailing" id="RyJ-Pj-JoU"/>
+                            <constraint firstItem="J92-2H-s9C" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="YNE-cs-udE"/>
+                            <constraint firstItem="VRf-fI-YO4" firstAttribute="top" secondItem="1Ke-yx-SRd" secondAttribute="bottom" constant="15" id="dFo-hj-lch"/>
+                            <constraint firstItem="1Ke-yx-SRd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jaA-py-R2f"/>
+                            <constraint firstItem="Mif-JG-hFa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="now-YP-SHa"/>
+                            <constraint firstItem="Mif-JG-hFa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="puf-Ph-MH4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5dd-dD-9eH"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="countryCode" destination="1Ke-yx-SRd" id="Hxw-Te-Yos"/>
+                        <outlet property="countryFlag" destination="bn8-Z7-enp" id="f2B-cn-6Je"/>
+                        <outlet property="countryName" destination="Mif-JG-hFa" id="obx-VW-1TA"/>
+                        <outlet property="countryPicker" destination="J92-2H-s9C" id="MKl-lK-WLh"/>
+                        <outlet property="phoneCode" destination="VRf-fI-YO4" id="pCI-Ye-csX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="600" y="369"/>
         </scene>
     </scenes>
 </document>

@@ -1,24 +1,26 @@
-//
-//  ViewController.swift
-//  MRCountryPicker
-//
-//  Created by Mojca Rojko on 06/11/2016.
-//  Copyright (c) 2016 Mojca Rojko. All rights reserved.
-//
-
 import UIKit
+import MRCountryPicker
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, MRCountryPickerDelegate {
+    
+    @IBOutlet weak var countryPicker: MRCountryPicker!
+    @IBOutlet weak var countryName: UILabel!
+    @IBOutlet weak var countryCode: UILabel!
+    @IBOutlet weak var countryFlag: UIImageView!
+    @IBOutlet weak var phoneCode: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        countryPicker.countryPickerDelegate = self
+        countryPicker.showPhoneNumbers = true
+        countryPicker.setCountry("SI")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func countryPhoneCodePicker(picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage) {
+        self.countryName.text = name
+        self.countryCode.text = countryCode
+        self.phoneCode.text = phoneCode
+        self.countryFlag.image = flag
     }
-
+    
 }
-
