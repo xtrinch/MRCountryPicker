@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MRCountryPicker_Example' do
+  pod 'MRCountryPicker', :path => '../'
+
+  target 'MRCountryPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
