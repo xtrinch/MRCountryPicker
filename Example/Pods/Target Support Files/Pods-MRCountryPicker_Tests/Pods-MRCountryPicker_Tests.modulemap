@@ -1,0 +1,6 @@
+framework module Pods_MRCountryPicker_Tests {
+  umbrella header "Pods-MRCountryPicker_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

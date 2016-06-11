@@ -1,0 +1,22 @@
+{
+  "name": "MRCountryPicker",
+  "version": "0.1.0",
+  "summary": "A short description of MRCountryPicker.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MRCountryPicker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mojca Rojko": "mojca.rojko@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MRCountryPicker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MRCountryPicker/Classes/**/*"
+}

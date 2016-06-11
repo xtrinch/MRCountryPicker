@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0381E300D2ACE3E695DCD922DECFCCC9 /* Pods-MRCountryPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA704CD95C7AA77655B73D216623BD7 /* Pods-MRCountryPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2269F79F6A20150C0F9956C6B4B1FBC3 /* MRCountryPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 611207CBC90587B555DCC341D3976D95 /* MRCountryPicker-dummy.m */; };
+		4EEB78FEBB657342EA207B73553EE95E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC357F458A9DE133F2D76F510DB3CD /* ReplaceMe.swift */; };
+		5A66FC288110BAFBB5066126632FB72A /* MRCountryPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43850A6BF447F0848AB1AF135CC91BEA /* MRCountryPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610FD77911C352DA1776CCA19B8C13A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		61938C2B43A2429A63D023AB49E3B105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		67D130C084EBA7E89D1DDDD12FBABD4E /* Pods-MRCountryPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B709CCE1C3954A0C5A2C0A133D7E5ABA /* Pods-MRCountryPicker_Example-dummy.m */; };
+		6B0E60C4B120377B0E63DD6FE7355B80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E83026767601910E19AB199A8CC4F572 /* Pods-MRCountryPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BDD185EEF4D183E1C535AB8AABA3B5 /* Pods-MRCountryPicker_Tests-dummy.m */; };
+		ED6ABA566A5AD2064E97FA7B58C6D171 /* Pods-MRCountryPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3980B4DE4718B55F25B61D2378B8B8D /* Pods-MRCountryPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0915479AD6948A7E082004ABD669A1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA0AA663666974DFF9CA20555B47B04;
+			remoteInfo = MRCountryPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003AA011FDD99929CEB184400C723792 /* Pods_MRCountryPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRCountryPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04009873E41657A6F77883A41349050C /* Pods-MRCountryPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRCountryPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0CA00E07AD2ABDF1D01B736F2D613337 /* Pods-MRCountryPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRCountryPicker_Tests-resources.sh"; sourceTree = "<group>"; };
+		10B6744E0310515A0974CDA76BC3FB18 /* Pods-MRCountryPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRCountryPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		12F1FF4F3ED0F2FA6400D56583F8980D /* MRCountryPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRCountryPicker-prefix.pch"; sourceTree = "<group>"; };
+		210DAF9EA1C237FD37269D9A07D1E468 /* Pods-MRCountryPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MRCountryPicker_Example.modulemap"; sourceTree = "<group>"; };
+		213134E1F8B009654AEF71CB95902FE5 /* Pods-MRCountryPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRCountryPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AA704CD95C7AA77655B73D216623BD7 /* Pods-MRCountryPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRCountryPicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		32B8F9DB453B87A6653747C8F8AC682B /* Pods-MRCountryPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRCountryPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		330F438AF35A255F87BBEDBD0C5519A1 /* Pods_MRCountryPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRCountryPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE377392C49A28D40329D70395CC6C7 /* Pods-MRCountryPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRCountryPicker_Example-resources.sh"; sourceTree = "<group>"; };
+		43850A6BF447F0848AB1AF135CC91BEA /* MRCountryPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRCountryPicker-umbrella.h"; sourceTree = "<group>"; };
+		554765B9C7476930382ED730DFB1E7F0 /* MRCountryPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRCountryPicker.xcconfig; sourceTree = "<group>"; };
+		611207CBC90587B555DCC341D3976D95 /* MRCountryPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRCountryPicker-dummy.m"; sourceTree = "<group>"; };
+		691DB15FC849F5E583951A0F1347F597 /* Pods-MRCountryPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRCountryPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		71332177AFB38E25E77585484901F550 /* Pods-MRCountryPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MRCountryPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		7B6B4B4E3C1F72757427FEE6EB3BBAE1 /* MRCountryPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MRCountryPicker.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99B5319D641692EEC23CEF7E52C08FD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B59756E935B9D145AFAA9766EF636F4 /* Pods-MRCountryPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRCountryPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A7BC357F458A9DE133F2D76F510DB3CD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		B016EA25C7A71EA0A5A3348565C0A8D5 /* Pods-MRCountryPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRCountryPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B3980B4DE4718B55F25B61D2378B8B8D /* Pods-MRCountryPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRCountryPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B709CCE1C3954A0C5A2C0A133D7E5ABA /* Pods-MRCountryPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRCountryPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		C5F48B8A4E559781ADECAF9B2DEB1BA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8BDD185EEF4D183E1C535AB8AABA3B5 /* Pods-MRCountryPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRCountryPicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		CA15CBAC170CD9D58350C1665B7DF581 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0DD6BF630D3F716B3B93B6F80D9DB13 /* Pods-MRCountryPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRCountryPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCF1F8EF44E616F3306103C6446D07EC /* MRCountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRCountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24635AED83718A941AF66809B31A05E /* Pods-MRCountryPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRCountryPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2B8A26D1737A4C6DAE18493A3A1A058 /* Pods-MRCountryPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRCountryPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10EDE64C0ED8B8593402267F3FFA8711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61938C2B43A2429A63D023AB49E3B105 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536C17F375F7047EA021105E0CB98C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0E60C4B120377B0E63DD6FE7355B80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9130AF1707F357B4DA7C6550568B087A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610FD77911C352DA1776CCA19B8C13A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0865D3F99E11A8ED0458A074E7CBED82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99B5319D641692EEC23CEF7E52C08FD0 /* Info.plist */,
+				7B6B4B4E3C1F72757427FEE6EB3BBAE1 /* MRCountryPicker.modulemap */,
+				554765B9C7476930382ED730DFB1E7F0 /* MRCountryPicker.xcconfig */,
+				611207CBC90587B555DCC341D3976D95 /* MRCountryPicker-dummy.m */,
+				12F1FF4F3ED0F2FA6400D56583F8980D /* MRCountryPicker-prefix.pch */,
+				43850A6BF447F0848AB1AF135CC91BEA /* MRCountryPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MRCountryPicker";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6F60206A99D53A83203AFD49481B199A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7BC357F458A9DE133F2D76F510DB3CD /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E3BBF3961E7E98A59CDFE96D26CC8B7C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A2FD33C19B9FAFB763365559DA5EBCA6 /* Products */,
+				E37E76B1DB0A4701AABDD5DDCB637760 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		837784E974C23061A24DDD8EC65DBA12 /* MRCountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6F60206A99D53A83203AFD49481B199A /* Classes */,
+			);
+			path = MRCountryPicker;
+			sourceTree = "<group>";
+		};
+		A2FD33C19B9FAFB763365559DA5EBCA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCF1F8EF44E616F3306103C6446D07EC /* MRCountryPicker.framework */,
+				003AA011FDD99929CEB184400C723792 /* Pods_MRCountryPicker_Example.framework */,
+				330F438AF35A255F87BBEDBD0C5519A1 /* Pods_MRCountryPicker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6C3DA38A5553A79E7FFB8874D698FF3 /* Pods-MRCountryPicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CA15CBAC170CD9D58350C1665B7DF581 /* Info.plist */,
+				71332177AFB38E25E77585484901F550 /* Pods-MRCountryPicker_Tests.modulemap */,
+				D0DD6BF630D3F716B3B93B6F80D9DB13 /* Pods-MRCountryPicker_Tests-acknowledgements.markdown */,
+				10B6744E0310515A0974CDA76BC3FB18 /* Pods-MRCountryPicker_Tests-acknowledgements.plist */,
+				C8BDD185EEF4D183E1C535AB8AABA3B5 /* Pods-MRCountryPicker_Tests-dummy.m */,
+				B016EA25C7A71EA0A5A3348565C0A8D5 /* Pods-MRCountryPicker_Tests-frameworks.sh */,
+				0CA00E07AD2ABDF1D01B736F2D613337 /* Pods-MRCountryPicker_Tests-resources.sh */,
+				B3980B4DE4718B55F25B61D2378B8B8D /* Pods-MRCountryPicker_Tests-umbrella.h */,
+				213134E1F8B009654AEF71CB95902FE5 /* Pods-MRCountryPicker_Tests.debug.xcconfig */,
+				691DB15FC849F5E583951A0F1347F597 /* Pods-MRCountryPicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-MRCountryPicker_Tests";
+			path = "Target Support Files/Pods-MRCountryPicker_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D347F10BB92003FCE9CF10B7415D0A84 /* MRCountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				837784E974C23061A24DDD8EC65DBA12 /* MRCountryPicker */,
+				0865D3F99E11A8ED0458A074E7CBED82 /* Support Files */,
+			);
+			name = MRCountryPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D85EAC078A71F9B2B695BCE35CC030EB /* Pods-MRCountryPicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C5F48B8A4E559781ADECAF9B2DEB1BA5 /* Info.plist */,
+				210DAF9EA1C237FD37269D9A07D1E468 /* Pods-MRCountryPicker_Example.modulemap */,
+				04009873E41657A6F77883A41349050C /* Pods-MRCountryPicker_Example-acknowledgements.markdown */,
+				E24635AED83718A941AF66809B31A05E /* Pods-MRCountryPicker_Example-acknowledgements.plist */,
+				B709CCE1C3954A0C5A2C0A133D7E5ABA /* Pods-MRCountryPicker_Example-dummy.m */,
+				32B8F9DB453B87A6653747C8F8AC682B /* Pods-MRCountryPicker_Example-frameworks.sh */,
+				3BE377392C49A28D40329D70395CC6C7 /* Pods-MRCountryPicker_Example-resources.sh */,
+				2AA704CD95C7AA77655B73D216623BD7 /* Pods-MRCountryPicker_Example-umbrella.h */,
+				E2B8A26D1737A4C6DAE18493A3A1A058 /* Pods-MRCountryPicker_Example.debug.xcconfig */,
+				9B59756E935B9D145AFAA9766EF636F4 /* Pods-MRCountryPicker_Example.release.xcconfig */,
+			);
+			name = "Pods-MRCountryPicker_Example";
+			path = "Target Support Files/Pods-MRCountryPicker_Example";
+			sourceTree = "<group>";
+		};
+		E37E76B1DB0A4701AABDD5DDCB637760 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D85EAC078A71F9B2B695BCE35CC030EB /* Pods-MRCountryPicker_Example */,
+				A6C3DA38A5553A79E7FFB8874D698FF3 /* Pods-MRCountryPicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E3BBF3961E7E98A59CDFE96D26CC8B7C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D347F10BB92003FCE9CF10B7415D0A84 /* MRCountryPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AC302D13DA5368FCD0B67341259715B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66FC288110BAFBB5066126632FB72A /* MRCountryPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACD08DDF562D026A5FA6FA35C7F4BD17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0381E300D2ACE3E695DCD922DECFCCC9 /* Pods-MRCountryPicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE0CAE8E870026489665B6BC27548B1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6ABA566A5AD2064E97FA7B58C6D171 /* Pods-MRCountryPicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AA0AA663666974DFF9CA20555B47B04 /* MRCountryPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6583755119C134AE43EADE4E8EED54 /* Build configuration list for PBXNativeTarget "MRCountryPicker" */;
+			buildPhases = (
+				826DF7B2B3A4E7CB2F9F4C7CDDC4AAF6 /* Sources */,
+				536C17F375F7047EA021105E0CB98C9A /* Frameworks */,
+				AC302D13DA5368FCD0B67341259715B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRCountryPicker;
+			productName = MRCountryPicker;
+			productReference = DCF1F8EF44E616F3306103C6446D07EC /* MRCountryPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BE7F8078B5215E182F008F10E43D6FE /* Pods-MRCountryPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A7FE0FC7D2D4648F5BD0DF5567A95A /* Build configuration list for PBXNativeTarget "Pods-MRCountryPicker_Example" */;
+			buildPhases = (
+				4CA1FFAF4411E3091EF1456308E2244C /* Sources */,
+				10EDE64C0ED8B8593402267F3FFA8711 /* Frameworks */,
+				ACD08DDF562D026A5FA6FA35C7F4BD17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBD260C232EA485279B6D8F4436A558F /* PBXTargetDependency */,
+			);
+			name = "Pods-MRCountryPicker_Example";
+			productName = "Pods-MRCountryPicker_Example";
+			productReference = 003AA011FDD99929CEB184400C723792 /* Pods_MRCountryPicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5212D9A36037471A754BCA5826031128 /* Pods-MRCountryPicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DEF78B3E950209B07C85D8BDB54BF7 /* Build configuration list for PBXNativeTarget "Pods-MRCountryPicker_Tests" */;
+			buildPhases = (
+				804A17F14753E5F89ED6DD27158F90DA /* Sources */,
+				9130AF1707F357B4DA7C6550568B087A /* Frameworks */,
+				BE0CAE8E870026489665B6BC27548B1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MRCountryPicker_Tests";
+			productName = "Pods-MRCountryPicker_Tests";
+			productReference = 330F438AF35A255F87BBEDBD0C5519A1 /* Pods_MRCountryPicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A2FD33C19B9FAFB763365559DA5EBCA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AA0AA663666974DFF9CA20555B47B04 /* MRCountryPicker */,
+				1BE7F8078B5215E182F008F10E43D6FE /* Pods-MRCountryPicker_Example */,
+				5212D9A36037471A754BCA5826031128 /* Pods-MRCountryPicker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CA1FFAF4411E3091EF1456308E2244C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67D130C084EBA7E89D1DDDD12FBABD4E /* Pods-MRCountryPicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804A17F14753E5F89ED6DD27158F90DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83026767601910E19AB199A8CC4F572 /* Pods-MRCountryPicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826DF7B2B3A4E7CB2F9F4C7CDDC4AAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2269F79F6A20150C0F9956C6B4B1FBC3 /* MRCountryPicker-dummy.m in Sources */,
+				4EEB78FEBB657342EA207B73553EE95E /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBD260C232EA485279B6D8F4436A558F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRCountryPicker;
+			target = 0AA0AA663666974DFF9CA20555B47B04 /* MRCountryPicker */;
+			targetProxy = 0915479AD6948A7E082004ABD669A1D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		025CDB9B114DB20994BBCEAD87F8360F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213134E1F8B009654AEF71CB95902FE5 /* Pods-MRCountryPicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRCountryPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRCountryPicker_Tests/Pods-MRCountryPicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRCountryPicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0915DB6C9825F135F2FF94AD13C4623A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554765B9C7476930382ED730DFB1E7F0 /* MRCountryPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRCountryPicker/MRCountryPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRCountryPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRCountryPicker/MRCountryPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MRCountryPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0AD2499420868F2340DDADED205D539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554765B9C7476930382ED730DFB1E7F0 /* MRCountryPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRCountryPicker/MRCountryPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRCountryPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRCountryPicker/MRCountryPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MRCountryPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADD985868CDDF365A5CB32790C0DD12F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691DB15FC849F5E583951A0F1347F597 /* Pods-MRCountryPicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRCountryPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRCountryPicker_Tests/Pods-MRCountryPicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRCountryPicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F6E4F13ED2F6A5A647F363B1D75F7AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B59756E935B9D145AFAA9766EF636F4 /* Pods-MRCountryPicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRCountryPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRCountryPicker_Example/Pods-MRCountryPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRCountryPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FBDFE7DFE05A6BFD645D832A7A52CD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B8A26D1737A4C6DAE18493A3A1A058 /* Pods-MRCountryPicker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MRCountryPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRCountryPicker_Example/Pods-MRCountryPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRCountryPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A7FE0FC7D2D4648F5BD0DF5567A95A /* Build configuration list for PBXNativeTarget "Pods-MRCountryPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDFE7DFE05A6BFD645D832A7A52CD0E /* Debug */,
+				F6E4F13ED2F6A5A647F363B1D75F7AC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6583755119C134AE43EADE4E8EED54 /* Build configuration list for PBXNativeTarget "MRCountryPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AD2499420868F2340DDADED205D539 /* Debug */,
+				0915DB6C9825F135F2FF94AD13C4623A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DEF78B3E950209B07C85D8BDB54BF7 /* Build configuration list for PBXNativeTarget "Pods-MRCountryPicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025CDB9B114DB20994BBCEAD87F8360F /* Debug */,
+				ADD985868CDDF365A5CB32790C0DD12F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
