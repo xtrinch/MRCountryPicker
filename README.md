@@ -13,7 +13,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Usage
 
-Make your UIPickerView a class of MRCountryPicker, set its countryPickerDelegate and implement its didSelectCountryWithName method.
+Make your UIPickerView a class of MRCountryPicker, set its countryPickerDelegate and implement its countryPhoneCodePicker method.
 
 See the following example: 
 
@@ -33,6 +33,7 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
         countryPicker.setCountry("SI")
     }
     
+    // a picker item was selected
     func countryPhoneCodePicker(picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage) {
         self.countryName.text = name
         self.countryCode.text = countryCode
