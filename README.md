@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![Platform](https://img.shields.io/cocoapods/p/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 
+Currently compatible with swift 2.2 and objective C. Swift 3 compatibility is planned.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
