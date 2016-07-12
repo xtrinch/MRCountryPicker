@@ -33,7 +33,7 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
         countryPicker.setCountry("SI")
     }
     
-    func countryPhoneCodePicker(picker: SwiftCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage) {
+    func countryPhoneCodePicker(picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage) {
         self.countryName.text = name
         self.countryCode.text = countryCode
         self.phoneCode.text = phoneCode
