@@ -1,7 +1,7 @@
 import UIKit
 import CoreTelephony
 
-public protocol MRCountryPickerDelegate {
+@objc public protocol MRCountryPickerDelegate {
     func countryPhoneCodePicker(picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage)
 }
 
