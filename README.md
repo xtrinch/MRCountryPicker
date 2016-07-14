@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![License](https://img.shields.io/cocoapods/l/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![Platform](https://img.shields.io/cocoapods/p/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Currently compatible with swift 2.2 and objective C. Swift 3 compatibility is planned.
 
@@ -48,11 +49,20 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
 
 ## Installation
 
-SwiftCountryPicker is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+SwiftCountryPicker is available through Cocoapods and Carthage.
+
+#### [CocoaPods](http://cocoapods.org):
+Add the following line to your Podfile:
 
 ```ruby
-pod "MRCountryPicker"
+pod 'MRCountryPicker', '~> 0.0.3'
+```
+
+#### [Carthage](https://github.com/Carthage/Carthage):
+Add the following line to your Cartfile:
+
+```ruby
+github "xTrinch/MRCountryPicker" ~> 0.0.3
 ```
 
 ## Author
