@@ -49,7 +49,7 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
 
 ## Installation
 
-SwiftCountryPicker is available through Cocoapods and Carthage.
+MRCountryPicker is available through Cocoapods and Carthage.
 
 #### [CocoaPods](http://cocoapods.org):
 Add the following line to your Podfile:
