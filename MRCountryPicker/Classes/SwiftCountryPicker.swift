@@ -60,6 +60,22 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
         }
     }
     
+    public func setCountryByPhoneCode(phoneCode: String) {
+        var row = 0
+        for index in 0..<countries.count {
+            if countries[index].phoneCode == phoneCode {
+                row = index
+                break
+            }
+        }
+        
+        self.selectRow(row, inComponent: 0, animated: true)
+        let country = countries[row]
+        if let countryPickerDelegate = countryPickerDelegate {
+            countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)
+        }
+    }
+    
     // Populates the metadata from the included json file resource
     
     func countryNamesByCode() -> [Country] {
