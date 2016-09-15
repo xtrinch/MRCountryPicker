@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Currently compatible with swift 2.2 and objective C. Swift 3 compatibility is planned.
+Versions below 0.0.4 are Swift 2.2 compatible, Version 0.0.5+ is Swift 3 compatible.
 
 ## Example
 
@@ -62,7 +62,7 @@ pod 'MRCountryPicker', '~> 0.0.4'
 Add the following line to your Cartfile:
 
 ```ruby
-github "xTrinch/MRCountryPicker" ~> 0.0.4
+github "xTrinch/MRCountryPicker" ~> 0.0.5
 ```
 
 ## Author
