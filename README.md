@@ -10,7 +10,7 @@ Versions below 0.0.4 are Swift 2.2 compatible, Version 0.0.5+ is Swift 3 compati
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first. 
 
 ![screen shot 2016-06-11 at 13 00 05](https://cloud.githubusercontent.com/assets/7256491/15984684/7930c73e-2fd4-11e6-83b8-91d522674a0c.png)
 
