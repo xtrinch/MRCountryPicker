@@ -55,7 +55,7 @@ MRCountryPicker is available through Cocoapods and Carthage.
 Add the following line to your Podfile:
 
 ```ruby
-pod 'MRCountryPicker', '~> 0.0.4'
+pod 'MRCountryPicker', '~> 0.0.5'
 ```
 
 #### [Carthage](https://github.com/Carthage/Carthage):
