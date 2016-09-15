@@ -67,7 +67,7 @@ github "xTrinch/MRCountryPicker" ~> 0.0.5
 
 ## Author
 
-xtrinch, mojca.rojko@gmail.com
+xtrinch, mojca.rojko@gmail.com 
 
 Made with a little help from my friends over at:  
 https://github.com/marmelroy/PhoneNumberKit  
