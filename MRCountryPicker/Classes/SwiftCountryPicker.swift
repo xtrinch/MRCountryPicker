@@ -2,7 +2,7 @@ import UIKit
 import CoreTelephony
 
 @objc public protocol MRCountryPickerDelegate {
-    func countryPhoneCodePicker(picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage)
+    func countryPhoneCodePicker(_ picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage)
 }
 
 struct Country {
@@ -19,11 +19,11 @@ struct Country {
     }
 }
 
-public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
+open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var countries: [Country]!
-    public var countryPickerDelegate: MRCountryPickerDelegate?
-    public var showPhoneNumbers: Bool = true
+    open var countryPickerDelegate: MRCountryPickerDelegate?
+    open var showPhoneNumbers: Bool = true
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,7 +44,7 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - Country Methods
     
-    public func setCountry(code: String) {
+    open func setCountry(_ code: String) {
         var row = 0
         for index in 0..<countries.count {
             if countries[index].code == code {
@@ -60,7 +60,7 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
         }
     }
     
-    public func setCountryByPhoneCode(phoneCode: String) {
+    open func setCountryByPhoneCode(_ phoneCode: String) {
         var row = 0
         for index in 0..<countries.count {
             if countries[index].phoneCode == phoneCode {
@@ -80,13 +80,13 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     
     func countryNamesByCode() -> [Country] {
         var countries = [Country]()
-        let frameworkBundle = NSBundle(forClass: self.dynamicType)
-        guard let jsonPath = frameworkBundle.pathForResource("SwiftCountryPicker.bundle/Data/countryCodes", ofType: "json"), let jsonData = NSData(contentsOfFile: jsonPath) else {
+        let frameworkBundle = Bundle(for: type(of: self))
+        guard let jsonPath = frameworkBundle.path(forResource: "SwiftCountryPicker.bundle/Data/countryCodes", ofType: "json"), let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
             return countries
         }
         
         do {
-            if let jsonObjects = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments) as? NSArray {
+            if let jsonObjects = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.allowFragments) as? NSArray {
 
                     for jsonObject in jsonObjects {
                         
@@ -98,7 +98,7 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
                             return countries
                         }
                         
-                        let flag = UIImage(named: "SwiftCountryPicker.bundle/Images/\(code.uppercaseString)", inBundle: NSBundle(forClass: self.dynamicType), compatibleWithTraitCollection: nil)
+                        let flag = UIImage(named: "SwiftCountryPicker.bundle/Images/\(code.uppercased())", in: Bundle(for: type(of: self)), compatibleWith: nil)
                         
                         let country = Country(code: code, name: name, phoneCode: phoneCode, flag: flag)
                         countries.append(country)
@@ -113,15 +113,15 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     
     // MARK: - Picker Methods
     
-    public func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    open func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    public func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    open func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return countries.count
     }
     
-    public func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    open func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         var resultView: SwiftCountryView
         
         if view == nil {
@@ -132,12 +132,12 @@ public class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
         
         resultView.setup(countries[row])
         if !showPhoneNumbers {
-            resultView.countryCodeLabel.hidden = true
+            resultView.countryCodeLabel.isHidden = true
         }
         return resultView
     }
     
-    public func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    open func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let country = countries[row]
         if let countryPickerDelegate = countryPickerDelegate {
             countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)

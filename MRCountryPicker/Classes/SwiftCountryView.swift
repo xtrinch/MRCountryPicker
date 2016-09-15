@@ -16,21 +16,21 @@ class NibLoadingView: UIView {
         nibSetup()
     }
     
-    private func nibSetup() {
-        backgroundColor = .clearColor()
+    fileprivate func nibSetup() {
+        backgroundColor = UIColor.clear
         
         view = loadViewFromNib()
         view.frame = bounds
-        view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true
         
         addSubview(view)
     }
     
-    private func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: String(self.dynamicType), bundle: bundle)
-        let nibView = nib.instantiateWithOwner(self, options: nil).first as! UIView
+    fileprivate func loadViewFromNib() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         
         return nibView
     }
@@ -53,10 +53,10 @@ class SwiftCountryView: NibLoadingView {
         super.init(coder: aDecoder)
     }
     
-    func setup(country: Country) {
+    func setup(_ country: Country) {
         if let flag = country.flag {
             flagImageView.layer.borderWidth = 0.5
-            flagImageView.layer.borderColor = UIColor.darkGrayColor().CGColor
+            flagImageView.layer.borderColor = UIColor.darkGray.cgColor
             flagImageView.layer.cornerRadius = 1
             flagImageView.layer.masksToBounds = true
             flagImageView.image = flag
