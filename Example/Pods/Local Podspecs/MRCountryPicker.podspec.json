@@ -1,8 +1,8 @@
 {
   "name": "MRCountryPicker",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "Country picker with flags and optional phone numbers for iOS written in Swift.",
-  "description": "Country picker with flags and optional phone numbers for iOS written in Swift. Has the option to set initial country, delegate functions return country code, country name, country phone prefix and country flag.",
+  "description": "Country picker with flags and optional phone numbers for iOS written in Swift. Has the option to set initial country, delegate functions return country code, country name, country phone prefix and country flag. Swift 3 support.",
   "homepage": "https://github.com/xtrinch/MRCountryPicker",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/xtrinch/MRCountryPicker.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "platforms": {
     "ios": "8.0"
