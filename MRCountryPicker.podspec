@@ -1,20 +1,10 @@
-#
-# Be sure to run `pod lib lint MRCountryPicker' to ensure this is a
-# valid spec before submitting.
-
 Pod::Spec.new do |s|
 s.name             = 'MRCountryPicker'
-s.version          = '0.0.4'
+s.version          = '0.0.5'
 s.summary          = 'Country picker with flags and optional phone numbers for iOS written in Swift.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
 s.description      = <<-DESC
-Country picker with flags and optional phone numbers for iOS written in Swift. Has the option to set initial country, delegate functions return country code, country name, country phone prefix and country flag.
+Country picker with flags and optional phone numbers for iOS written in Swift. Has the option to set initial country, delegate functions return country code, country name, country phone prefix and country flag. Swift 3 support.
 DESC
 
 s.homepage         = 'https://github.com/xtrinch/MRCountryPicker'
@@ -32,7 +22,4 @@ s.resource_bundles = {
 'SwiftCountryPicker' => ['MRCountryPicker/Assets/SwiftCountryPicker.bundle/*']
 }
 
-# s.public_header_files = 'Pod/Classes/**/*.h'
-# s.frameworks = 'CoreTelephony'
-# s.dependency 'AFNetworking', '~> 2.3'
 end
