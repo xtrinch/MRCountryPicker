@@ -22,7 +22,7 @@ struct Country {
 open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var countries: [Country]!
-    open var countryPickerDelegate: MRCountryPickerDelegate?
+    open weak var countryPickerDelegate: MRCountryPickerDelegate?
     open var showPhoneNumbers: Bool = true
     
     override init(frame: CGRect) {
