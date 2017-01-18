@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'MRCountryPicker'
-s.version          = '0.0.5'
+s.version          = '0.0.6'
 s.summary          = 'Country picker with flags and optional phone numbers for iOS written in Swift.'
 
 s.description      = <<-DESC
