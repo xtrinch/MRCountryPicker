@@ -9,13 +9,15 @@ struct Country {
     var code: String?
     var name: String?
     var phoneCode: String?
-    var flag: UIImage?
-    
-    init(code: String?, name: String?, phoneCode: String?, flag: UIImage?) {
+    var flag: UIImage? {
+        guard let code = self.code else { return nil }
+        return UIImage(named: "SwiftCountryPicker.bundle/Images/\(code.uppercased())", in: Bundle(for: MRCountryPicker.self), compatibleWith: nil)
+    }
+
+    init(code: String?, name: String?, phoneCode: String?) {
         self.code = code
         self.name = name
         self.phoneCode = phoneCode
-        self.flag = flag
     }
 }
 
@@ -97,10 +99,8 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
                         guard let code = countryObj["code"] as? String, let phoneCode = countryObj["dial_code"] as? String, let name = countryObj["name"] as? String else {
                             return countries
                         }
-                        
-                        let flag = UIImage(named: "SwiftCountryPicker.bundle/Images/\(code.uppercased())", in: Bundle(for: type(of: self)), compatibleWith: nil)
-                        
-                        let country = Country(code: code, name: name, phoneCode: phoneCode, flag: flag)
+
+                        let country = Country(code: code, name: name, phoneCode: phoneCode)
                         countries.append(country)
                     }
 
