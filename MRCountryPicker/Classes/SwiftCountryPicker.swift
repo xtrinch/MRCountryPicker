@@ -49,6 +49,12 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         super.delegate = self
     }
     
+    // MARK: - Locale Methods
+
+    open func setLocale(_ locale: String) {
+        self.selectedLocale = Locale(identifier: locale)
+    }
+
     // MARK: - Country Methods
     
     open func setCountry(_ code: String) {
@@ -65,10 +71,6 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         if let countryPickerDelegate = countryPickerDelegate {
             countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)
         }
-    }
-    
-    open func setLocale(_ locale: String) {
-        self.selectedLocale = Locale(identifier: locale)
     }
 
     open func setCountryByPhoneCode(_ phoneCode: String) {
