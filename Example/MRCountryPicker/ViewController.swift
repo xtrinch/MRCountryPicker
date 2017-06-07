@@ -14,6 +14,7 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
         countryPicker.countryPickerDelegate = self
         countryPicker.showPhoneNumbers = true
         countryPicker.setCountry("SI")
+        countryPicker.setLocale("sl_SI")
     }
     
     func countryPhoneCodePicker(_ picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage) {

@@ -24,6 +24,7 @@ struct Country {
 open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var countries: [Country]!
+    open var selectedLocale: Locale?
     open weak var countryPickerDelegate: MRCountryPickerDelegate?
     open var showPhoneNumbers: Bool = true
     
@@ -36,9 +37,13 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         super.init(coder: aDecoder)
         setup()
     }
-    
+
     func setup() {
         countries = countryNamesByCode()
+
+        if let code = Locale.current.languageCode {
+            self.selectedLocale = Locale(identifier: code)
+        }
 
         super.dataSource = self
         super.delegate = self
@@ -62,6 +67,10 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         }
     }
     
+    open func setLocale(_ locale: String) {
+        self.selectedLocale = Locale(identifier: locale)
+    }
+
     open func setCountryByPhoneCode(_ phoneCode: String) {
         var row = 0
         for index in 0..<countries.count {
@@ -130,7 +139,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
             resultView = view as! SwiftCountryView
         }
         
-        resultView.setup(countries[row])
+        resultView.setup(countries[row], locale: self.selectedLocale)
         if !showPhoneNumbers {
             resultView.countryCodeLabel.isHidden = true
         }

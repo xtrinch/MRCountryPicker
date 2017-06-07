@@ -53,7 +53,7 @@ class SwiftCountryView: NibLoadingView {
         super.init(coder: aDecoder)
     }
     
-    func setup(_ country: Country) {
+    func setup(_ country: Country, locale: Locale?) {
         if let flag = country.flag {
             flagImageView.layer.borderWidth = 0.5
             flagImageView.layer.borderColor = UIColor.darkGray.cgColor
@@ -62,8 +62,15 @@ class SwiftCountryView: NibLoadingView {
             flagImageView.image = flag
         }
         
-        countryNameLabel.text = country.name
         countryCodeLabel.text = country.phoneCode
+
+
+        if let code = country.code,
+            let locale = locale {
+            countryNameLabel.text = locale.localizedString(forRegionCode: code)
+        }else{
+            countryNameLabel.text = country.name
+        }
     }
     
 }
