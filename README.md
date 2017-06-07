@@ -33,7 +33,15 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
         super.viewDidLoad()
         countryPicker.countryPickerDelegate = self
         countryPicker.showPhoneNumbers = true
+
+        // set country by its code
         countryPicker.setCountry("SI")
+
+        // optionally set custom locale; defaults to system's locale
+        countryPicker.setLocale("sl_SI")
+
+        // set country by its name
+        countryPicker.setCountryByName("Canada")
     }
     
     // a picker item was selected
@@ -55,14 +63,14 @@ MRCountryPicker is available through Cocoapods and Carthage.
 Add the following line to your Podfile:
 
 ```ruby
-pod 'MRCountryPicker', '~> 0.0.6'
+pod 'MRCountryPicker', '~> 0.0.7'
 ```
 
 #### [Carthage](https://github.com/Carthage/Carthage):
 Add the following line to your Cartfile:
 
 ```ruby
-github "xTrinch/MRCountryPicker" ~> 0.0.6
+github "xTrinch/MRCountryPicker" ~> 0.0.7
 ```
 
 ## Author
