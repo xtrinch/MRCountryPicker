@@ -58,30 +58,30 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     // MARK: - Country Methods
     
     open func setCountry(_ code: String) {
-        var row = 0
         for index in 0..<countries.count {
             if countries[index].code == code {
-                row = index
-                break
+                return self.setCountryByRow(row: index)
             }
-        }
-        
-        self.selectRow(row, inComponent: 0, animated: true)
-        let country = countries[row]
-        if let countryPickerDelegate = countryPickerDelegate {
-            countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)
         }
     }
 
     open func setCountryByPhoneCode(_ phoneCode: String) {
-        var row = 0
         for index in 0..<countries.count {
             if countries[index].phoneCode == phoneCode {
-                row = index
-                break
+                return self.setCountryByRow(row: index)
             }
         }
-        
+    }
+
+    open func setCountryByName(_ name: String) {
+        for index in 0..<countries.count {
+            if countries[index].name == name {
+                return self.setCountryByRow(row: index)
+            }
+        }
+    }
+
+    func setCountryByRow(row: Int) {
         self.selectRow(row, inComponent: 0, animated: true)
         let country = countries[row]
         if let countryPickerDelegate = countryPickerDelegate {
