@@ -1,7 +1,8 @@
 # MRCountryPicker
 
-[![CI Status](http://img.shields.io/travis/xtrinch/MRCountryPicker.svg?style=flat)](https://travis-ci.org/xtrinch/MRCountryPicker)
 [![Version](https://img.shields.io/cocoapods/v/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
+[![Downloads](https://img.shields.io/cocoapods/dt/MRCountryPicker.svg)](http://cocoapods.org/pods/MRCountryPicker)
+[![CI Status](http://img.shields.io/travis/xtrinch/MRCountryPicker.svg?style=flat)](https://travis-ci.org/xtrinch/MRCountryPicker)
 [![License](https://img.shields.io/cocoapods/l/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![Platform](https://img.shields.io/cocoapods/p/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
