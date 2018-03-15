@@ -1,11 +1,10 @@
 use_frameworks!
+platform :ios, '8.3'
 
 target 'MRCountryPicker_Example' do
   pod 'MRCountryPicker', :path => '../'
 
   target 'MRCountryPicker_Tests' do
     inherit! :search_paths
-
-    
   end
 end
