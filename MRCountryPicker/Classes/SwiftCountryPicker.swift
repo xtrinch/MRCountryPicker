@@ -5,11 +5,11 @@ import CoreTelephony
     func countryPhoneCodePicker(_ picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage)
 }
 
-struct Country {
-    var code: String?
-    var name: String?
-    var phoneCode: String?
-    var flag: UIImage? {
+public struct Country { // TODO takac added by me !!
+    public var code: String?
+    public var name: String?
+    public var phoneCode: String?
+    public var flag: UIImage? {
         guard let code = self.code else { return nil }
         return UIImage(named: "SwiftCountryPicker.bundle/Images/\(code.uppercased())", in: Bundle(for: MRCountryPicker.self), compatibleWith: nil)
     }
@@ -22,19 +22,30 @@ struct Country {
 }
 
 open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
-    
+
+    // TODO takac added by me !!
+    var countriesCodesEU = ["BE", "BG", "CY", "CZ", "DK", "EE", "FI", "FR", "GR", "NL", "HR", "IE", "LT", "LV", "LU", "HU", "MT", "DE", "PL", "PT", "AT", "RO", "SK", "SI", "GB", "ES", "SE", "IT"]
+    var onlyEU = false
+
     var countries: [Country]!
     open var selectedLocale: Locale?
     open weak var countryPickerDelegate: MRCountryPickerDelegate?
     open var showPhoneNumbers: Bool = true
+    open var selectedCountry: Country? // TODO takac added by me !!
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) { // TODO takac added by me !!
         super.init(frame: frame)
         setup()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setup()
+    }
+
+    public init (frame: CGRect, onlyEU: Bool = false){ // TODO takac added by me !!
+        super.init(frame: frame)
+        self.onlyEU = onlyEU
         setup()
     }
 
@@ -84,6 +95,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     func setCountryByRow(row: Int) {
         self.selectRow(row, inComponent: 0, animated: true)
         let country = countries[row]
+        self.selectedCountry = country // TODO takac added by me !!
         if let countryPickerDelegate = countryPickerDelegate {
             countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)
         }
@@ -112,7 +124,13 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
                         }
 
                         let country = Country(code: code, name: name, phoneCode: phoneCode)
-                        countries.append(country)
+                        if self.onlyEU { // filter EU  TODO takac added by me !!
+                            if self.countriesCodesEU.contains(code) {
+                                countries.append(country)
+                            }
+                        } else {
+                            countries.append(country)
+                        }
                     }
 
                 }
@@ -150,6 +168,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     
     open func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let country = countries[row]
+        self.selectedCountry = country // TODO takac added by me !!
         if let countryPickerDelegate = countryPickerDelegate {
             countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)
         }
