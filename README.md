@@ -7,7 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MRCountryPicker.svg?style=flat)](http://cocoapods.org/pods/MRCountryPicker)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Versions below 0.0.4 are Swift 2.2 compatible, Version 0.0.5+ is Swift 3 compatible.
+Versions below 0.0.4 are Swift 2.2 compatible, versions 0.0.5-0.0.7 are Swift 3 compatible, versions 0.0.8+ are Swift 4 compatible.
 
 ## Example
 
@@ -64,14 +64,14 @@ MRCountryPicker is available through Cocoapods and Carthage.
 Add the following line to your Podfile:
 
 ```ruby
-pod 'MRCountryPicker', '~> 0.0.7'
+pod 'MRCountryPicker', '~> 0.0.8'
 ```
 
 #### [Carthage](https://github.com/Carthage/Carthage):
 Add the following line to your Cartfile:
 
 ```ruby
-github "xTrinch/MRCountryPicker" ~> 0.0.7
+github "xTrinch/MRCountryPicker" ~> 0.0.8
 ```
 
 ## Author
