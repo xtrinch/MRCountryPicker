@@ -2,24 +2,13 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode9
+osx_image: xcode9.3
 language: objective-c
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
-install:
-# if setuptools<17.1 installing even dependencies could fail
-#- if [ "$TRAVIS_OS_NAME" == "osx" ]; then travis_retry wget https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh -O miniconda.sh;bash miniconda.sh -b -p $HOME/miniconda; export PATH="$HOME/miniconda/bin:$PATH" ;  fi
-- |
-  set -e
-  if [ "$TRAVIS_OS_NAME" == "osx" ]; then
-    rvm get stable
-    which python || travis_retry brew install python && brew link --overwrite python
-    which python
-    python --version
-  fi
 script:
 - set -o pipefail && xcodebuild test -workspace Example/MRCountryPicker.xcworkspace -scheme MRCountryPicker-Example -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.2' | xcpretty
 - pod lib lint
