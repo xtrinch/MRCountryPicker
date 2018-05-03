@@ -2,7 +2,7 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode8
+osx_image: xcode9
 language: objective-c
 # cache: cocoapods
 # podfile: Example/Podfile
@@ -21,5 +21,5 @@ install:
     python --version
   fi
 script:
-- set -o pipefail && xcodebuild test -workspace Example/MRCountryPicker.xcworkspace -scheme MRCountryPicker-Example -sdk iphonesimulator10.0 ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/MRCountryPicker.xcworkspace -scheme MRCountryPicker-Example -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.2' | xcpretty
 - pod lib lint
