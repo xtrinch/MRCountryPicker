@@ -25,7 +25,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     
     var countries: [Country]!
     open var selectedLocale: Locale?
-    open weak var countryPickerDelegate: MRCountryPickerDelegate?
+    @objc open weak var countryPickerDelegate: MRCountryPickerDelegate?
     open var showPhoneNumbers: Bool = true
     
     override init(frame: CGRect) {
@@ -57,15 +57,15 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
 
     // MARK: - Country Methods
     
-    open func setCountry(_ code: String) {
+    @objc open func setCountry(_ code: String) {
         for index in 0..<countries.count {
             if countries[index].code == code {
                 return self.setCountryByRow(row: index)
             }
         }
     }
-
-    open func setCountryByPhoneCode(_ phoneCode: String) {
+    
+    @objc open func setCountryByPhoneCode(_ phoneCode: String) {
         for index in 0..<countries.count {
             if countries[index].phoneCode == phoneCode {
                 return self.setCountryByRow(row: index)
