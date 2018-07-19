@@ -14,10 +14,17 @@ struct Country {
         return UIImage(named: "SwiftCountryPicker.bundle/Images/\(code.uppercased())", in: Bundle(for: MRCountryPicker.self), compatibleWith: nil)
     }
 
-    init(code: String?, name: String?, phoneCode: String?) {
+    init(code: String?, name: String?, phoneCode: String?, locale: Locale?) {
         self.code = code
-        self.name = name
+
         self.phoneCode = phoneCode
+        
+        if let code = code,
+            let locale = locale {
+            self.name = locale.localizedString(forRegionCode: code)
+        } else{
+            self.name = name
+        }
     }
 }
 
@@ -39,11 +46,12 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     }
 
     func setup() {
-        countries = countryNamesByCode()
 
         if let code = Locale.current.languageCode {
             self.selectedLocale = Locale(identifier: code)
         }
+        
+        countries = countryNamesByCode()
 
         super.dataSource = self
         super.delegate = self
@@ -53,6 +61,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
 
     open func setLocale(_ locale: String) {
         self.selectedLocale = Locale(identifier: locale)
+        countries = countryNamesByCode()
     }
 
     // MARK: - Country Methods
@@ -111,7 +120,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
                             return countries
                         }
 
-                        let country = Country(code: code, name: name, phoneCode: phoneCode)
+                        let country = Country(code: code, name: name, phoneCode: phoneCode, locale: selectedLocale)
                         countries.append(country)
                     }
 
@@ -119,7 +128,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         } catch {
             return countries
         }
-        return countries
+        return countries.sorted { $0.name! < $1.name! }
     }
     
     // MARK: - Picker Methods

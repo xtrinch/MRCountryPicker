@@ -68,7 +68,7 @@ class SwiftCountryView: NibLoadingView {
         if let code = country.code,
             let locale = locale {
             countryNameLabel.text = locale.localizedString(forRegionCode: code)
-        }else{
+        } else{
             countryNameLabel.text = country.name
         }
     }
