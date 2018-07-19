@@ -98,6 +98,16 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         }
     }
     
+    open func setTopCountries(codes :[String]) {
+        for code in codes {
+            let index = countries.index { (country) -> Bool in country.code == code }
+            guard let fromIndex = index else { return }
+
+            let element = countries.remove(at: fromIndex)
+            countries.insert(element, at: 0)
+        }
+    }
+    
     // Populates the metadata from the included json file resource
     
     func countryNamesByCode() -> [Country] {
