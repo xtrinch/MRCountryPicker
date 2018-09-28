@@ -100,7 +100,7 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     
     open func setTopCountries(codes: [String]) {
         for code in codes.reversed() {
-            let index = countries.index { (country) -> Bool in country.code == code }
+            let index = countries.index { (country) -> Bool in country.code == code.uppercased() }
             guard let fromIndex = index else { return }
 
             let element = countries.remove(at: fromIndex)

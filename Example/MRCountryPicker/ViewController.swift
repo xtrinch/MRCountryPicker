@@ -13,7 +13,7 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
         super.viewDidLoad()
         countryPicker.countryPickerDelegate = self
         countryPicker.showPhoneNumbers = true
-        countryPicker.setTopCountries(codes: ["NO", "SE", "GB", "PL", "DK", "DE"])
+        countryPicker.setTopCountries(codes: ["no", "se", "gb", "pl", "dk", "de"])
         countryPicker.setCountryByPhoneCode("+48")
     }
     
