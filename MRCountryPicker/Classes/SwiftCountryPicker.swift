@@ -89,6 +89,10 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
             }
         }
     }
+    
+    open func setDefaultCountry() {
+        setCountryByRow(row: 0)
+    }
 
     func setCountryByRow(row: Int) {
         self.selectRow(row, inComponent: 0, animated: true)
