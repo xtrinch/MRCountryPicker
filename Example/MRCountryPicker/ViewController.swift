@@ -13,8 +13,8 @@ class ViewController: UIViewController, MRCountryPickerDelegate {
         super.viewDidLoad()
         countryPicker.countryPickerDelegate = self
         countryPicker.showPhoneNumbers = true
-        countryPicker.setTopCountries(codes: ["DE", "DK", "PL", "GB", "SE", "NO"])
-        countryPicker.setCountryByName("Canada")
+        countryPicker.setTopCountries(codes: ["NO", "SE", "GB", "PL", "DK", "DE"])
+        countryPicker.setCountryByPhoneCode("+48")
     }
     
     func countryPhoneCodePicker(_ picker: MRCountryPicker, didSelectCountryWithName name: String, countryCode: String, phoneCode: String, flag: UIImage) {

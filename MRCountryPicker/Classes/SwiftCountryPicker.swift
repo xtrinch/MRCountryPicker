@@ -98,8 +98,8 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         }
     }
     
-    open func setTopCountries(codes :[String]) {
-        for code in codes {
+    open func setTopCountries(codes: [String]) {
+        for code in codes.reversed() {
             let index = countries.index { (country) -> Bool in country.code == code }
             guard let fromIndex = index else { return }
 
