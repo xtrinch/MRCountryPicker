@@ -17,9 +17,9 @@ s.source           = { :git => 'https://github.com/xtrinch/MRCountryPicker.git',
 s.ios.deployment_target = '8.0'
 s.swift_version = '4.2'
 
-s.source_files = 'MRCountryPicker/Classes/**/*'
+s.source_files = 'MRCountryPicker/Classes/**/*.{swift}'
 
-s.resources = [ "MRCountryPicker/MRCountryPicker/SwiftCountryView.xib" ]
+s.resource = "MRCountryPicker/MRCountryPicker/SwiftCountryView.xib"
 s.resource_bundle = { 'SwiftCountryPicker' => ['MRCountryPicker/Assets/SwiftCountryPicker.bundle/*'] }
 
 end
