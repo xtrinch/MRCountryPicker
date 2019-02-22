@@ -15,7 +15,7 @@ s.source           = { :git => 'https://github.com/xtrinch/MRCountryPicker.git',
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
 s.ios.deployment_target = '8.0'
-s.swift_version = '4.0'
+s.swift_version = '4.2'
 
 s.source_files = 'MRCountryPicker/Classes/**/*'
 
