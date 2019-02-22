@@ -19,7 +19,7 @@ s.swift_version = '4.2'
 
 s.source_files = 'MRCountryPicker/Classes/**/*'
 
-s.resource = "MRCountryPicker/**/*.{png,bundle,xib,nib}"
+s.resource = "MRCountryPicker/Classes/**/*.{png,bundle,xib,nib}"
 
 s.resource_bundles = {
 	'SwiftCountryPicker' => ['MRCountryPicker/Assets/SwiftCountryPicker.bundle/*']
