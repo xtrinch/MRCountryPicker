@@ -112,6 +112,11 @@ open class MRCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
         }
     }
     
+    open func topCountry() -> (code: String?, name: String?, phoneCode: String?) {
+        let topCountry = self.countries[0]
+        return (topCountry.code, topCountry.name, topCountry.phoneCode)
+    }
+    
     // Populates the metadata from the included json file resource
     
     func countryNamesByCode() -> [Country] {
