@@ -301,7 +301,7 @@
 },
 {
 "name": "Dominican Republic",
-"dial_code": "+1849",
+"dial_code": "+1",
 "code": "DO"
 },
 {
@@ -553,6 +553,11 @@
 "name": "Korea, Republic of South Korea",
 "dial_code": "+82",
 "code": "KR"
+},
+{
+"name": "Kosovo",
+"dial_code": "+383",
+"code": "XK"
 },
 {
 "name": "Kuwait",
